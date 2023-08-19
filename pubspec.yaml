@@ -1,0 +1,32 @@
+name: state_management_geoapp
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_map: ^5.0.0
+  flutter_riverpod: ^2.3.7
+  freezed_annotation: ^2.4.1
+  get: ^4.6.5
+  latlong2: ^0.9.0
+  provider: ^6.0.5
+  riverpod_annotation: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  freezed: ^2.4.2
+  riverpod_generator: ^2.2.6
+  riverpod_lint: ^2.0.1
+  custom_lint: ^0.5.2
+
+flutter:
+  uses-material-design: true
