@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:state_management_geoapp/provider/map_page.dart';
 import 'package:state_management_geoapp/provider/state/point_list_state.dart';
 
-void providerMain() {
+void main() {
   runApp(const MainApp());
 }
 

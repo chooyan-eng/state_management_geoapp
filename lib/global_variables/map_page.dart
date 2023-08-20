@@ -16,7 +16,7 @@ class _MapPageState extends State<MapPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GLOBAL VARIABLES'),
+        title: const Text('Global Variables'),
         actions: [
           IconButton(
             onPressed: () {

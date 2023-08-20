@@ -1,0 +1,86 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "standard",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/standard/main.dart"
+            ]
+        },
+        {
+            "name": "Riverpod",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/riverpod/main.dart"
+            ]
+        },
+        {
+            "name": "Provider",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/provider/main.dart"
+            ]
+        },
+        {
+            "name": "BLoC",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/bloc/main.dart"
+            ]
+        },
+        {
+            "name": "GetX",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/getx/main.dart"
+            ]
+        },
+        {
+            "name": "MobX",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/mobx/main.dart"
+            ]
+        },
+        {
+            "name": "Redux",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/redux/main.dart"
+            ]
+        },
+        {
+            "name": "global variables",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-t",
+                "lib/global_variables/main.dart"
+            ]
+        },
+        {
+            "name": "state_management_geoapp (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+    ]
+}

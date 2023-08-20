@@ -5,7 +5,7 @@ import 'package:state_management_geoapp/redux/map_page.dart';
 import 'package:state_management_geoapp/redux/state/app_state.dart';
 import 'package:state_management_geoapp/redux/state/reducer/point_list_reducer.dart';
 
-void reduxMain() {
+void main() {
   final store = Store<AppState>(pointListReducer, initialState: AppState());
   runApp(MainApp(store: store));
 }

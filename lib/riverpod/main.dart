@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_management_geoapp/riverpod/map_page.dart';
 
-void riverpodMain() {
+void main() {
   runApp(
     const ProviderScope(child: MainApp()),
   );

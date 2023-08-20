@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:state_management_geoapp/global_variables/map_page.dart';
 
-void globalVariablesMain() {
+void main() {
   runApp(const MainApp());
 }
 
