@@ -45,3 +45,5 @@ and below will be added in the future versions
 # Setup
 
 Just `flutter run` after cloning this repository to run this app. No additional setup is required.
+
+Target approach can be selected via `launch.json` using `-i` option of `flutter run`.
