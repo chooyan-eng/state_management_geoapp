@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:state_management_geoapp/bloc/point_list_page.dart';
+import 'package:state_management_geoapp/bloc/state/point_list_cubit.dart';
+import 'package:state_management_geoapp/shared/model/point.dart';
+import 'package:state_management_geoapp/shared/widget/map.dart';
+
+class MapPage extends StatefulWidget {
+  const MapPage({super.key});
+
+  @override
+  State<MapPage> createState() => _MapPageState();
+}
+
+class _MapPageState extends State<MapPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('BLoC'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(PointListPage.route());
+            },
+            icon: const Icon(Icons.maps_ugc),
+          ),
+        ],
+      ),
+      body: BlocBuilder<PointListCubit, List<Point>>(
+        builder: (context, pointList) {
+          return MyMap(
+            pointList: pointList,
+            onLongPress: (point) {
+              context.read<PointListCubit>().add(
+                    Point(comment: '', coordinate: point),
+                  );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
