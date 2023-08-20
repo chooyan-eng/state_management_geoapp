@@ -3,7 +3,7 @@ import 'package:get_it/get_it.dart';
 import 'package:state_management_geoapp/mobx/map_page.dart';
 import 'package:state_management_geoapp/mobx/state/point_list_state.dart';
 
-void mobxMain() {
+void main() {
   _setupStore();
   runApp(const MainApp());
 }

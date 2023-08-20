@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:state_management_geoapp/getx/map_page.dart';
 
-void getxMain() {
+void main() {
   runApp(const MainApp());
 }
 

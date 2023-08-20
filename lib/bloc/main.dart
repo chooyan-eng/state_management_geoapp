@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:state_management_geoapp/bloc/map_page.dart';
 import 'package:state_management_geoapp/bloc/state/point_list_cubit.dart';
 
-void blocMain() {
+void main() {
   runApp(const MainApp());
 }
 

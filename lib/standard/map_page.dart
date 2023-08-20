@@ -17,7 +17,7 @@ class _MapPageState extends State<MapPage> {
     final pointList = PointListProvider.of(context, listen: true).pointList;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('STANDARD'),
+        title: const Text('Standard'),
         actions: [
           IconButton(
             onPressed: () {

@@ -14,7 +14,7 @@ class MapPage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('RIVERPOD'),
+        title: const Text('Riverpod'),
         actions: [
           IconButton(
             onPressed: () {
