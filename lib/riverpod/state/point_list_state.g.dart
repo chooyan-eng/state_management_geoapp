@@ -6,7 +6,7 @@ part of 'point_list_state.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$pointListHash() => r'9ae1ea8bd911a63ad11d7fb10f68570a60e8fdcd';
+String _$pointListHash() => r'c65c2510e0dd539e7ae87f75d1694ad9cede0d6d';
 
 /// See also [PointList].
 @ProviderFor(PointList)
