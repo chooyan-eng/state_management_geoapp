@@ -14,6 +14,7 @@ class CurentLocation extends _$CurentLocation {
   LatLng? build() {
     final isTracking = ref.watch(isTrackingProvider);
 
+    // when isTracking == false, ref.listen is automatically stopped
     if (isTracking) {
       ref.listen(locationStreamProvider, (_, next) {
         state = next.value;
@@ -24,6 +25,8 @@ class CurentLocation extends _$CurentLocation {
   }
 
   void updateWithCurrent() {
-    locationService.getCurrent().then((value) => state = value);
+    locationService.getCurrent().then(
+          (value) => state = value,
+        );
   }
 }

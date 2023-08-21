@@ -6,9 +6,7 @@ part 'point_list_state.g.dart';
 @riverpod
 class PointList extends _$PointList {
   @override
-  List<Point> build() {
-    return [];
-  }
+  List<Point> build() => [];
 
   void add(Point point) {
     state = [...state, point];
