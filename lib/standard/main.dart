@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:state_management_geoapp/standard/map_page.dart';
+import 'package:state_management_geoapp/standard/state/location_state.dart';
 import 'package:state_management_geoapp/standard/state/point_list_state.dart';
 
 void main() {
@@ -11,9 +12,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const PointListProvider(
-      child: MaterialApp(
-        home: MapPage(),
+    return LocationStateProvider(
+      child: const PointListProvider(
+        child: MaterialApp(
+          home: MapPage(),
+        ),
       ),
     );
   }
